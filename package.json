@@ -1,0 +1,67 @@
+{
+  "name": "auto-header-vscode",
+  "displayName": "auto-header-vscode",
+  "description": "Generate auto header for vscode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Auto header extension configuration settings",
+      "properties": {
+        "headerComment.authorName": {
+          "type": "string",
+          "default": "Serkan UNCU",
+          "description": "Author's Name"
+        },
+        "headerComment.authorEmail": {
+          "type": "string",
+          "default": "serkanuncuu@gmail.com",
+          "description": "Author's Email"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "auto-header-vscode.addHeaderComment",
+        "title": "Generate Header or Update"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "auto-header-vscode.addHeaderComment",
+        "key": "ctrl+shift+h",
+        "mac": "cmd+shift+h",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "webpack": "webpack --mode development",
+    "webpack-dev": "webpack --mode development --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "test-compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.82.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "@vscode/test-electron": "^2.3.4",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

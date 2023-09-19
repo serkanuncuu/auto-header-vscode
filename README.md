@@ -1,2 +1,4 @@
-# auto-header-vscode
-Generate or Replace Header for vscode
+## Yapılandırma
+
+- `auto-header-vscode.authorName`: Type Author Name.
+- `auto-header-vscode.authorEmail`: Type Author Mail.
