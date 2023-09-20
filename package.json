@@ -1,8 +1,9 @@
 {
   "name": "auto-header-vscode",
-  "displayName": "auto-header-vscode",
+  "displayName": "Auto Header Vscode",
   "description": "Generate auto header for vscode",
-  "version": "0.0.1",
+  "version": "1.0.1",
+  "publisher": "serkanuncuu",
   "repository": {
     "type": "git",
     "url": "https://github.com/serkanuncuu/auto-header-vscode.git"

@@ -1,3 +1,10 @@
+/**
+ * @file: extension.ts
+ * @author: Serkan UNCU <serkanuncuu@gmail.com>
+ * Date: 20.09.2023
+ * Last Modified Date: 20.09.2023
+ * Last Modified By: Serkan UNCU <serkanuncuu@gmail.com>
+ */
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
