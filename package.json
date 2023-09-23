@@ -2,8 +2,9 @@
   "name": "auto-header-vscode",
   "displayName": "Auto Header Vscode",
   "description": "Generate auto header for vscode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "serkanuncuu",
+  "icon": "auto-header-icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/serkanuncuu/auto-header-vscode.git"
@@ -18,16 +19,16 @@
   "main": "./out/extension.js",
   "contributes": {
     "configuration": {
-      "title": "Auto header extension configuration settings",
+      "title": "Auto header vscode settings",
       "properties": {
         "headerComment.authorName": {
           "type": "string",
-          "default": "Serkan UNCU",
+          "default": "",
           "description": "Author's Name"
         },
         "headerComment.authorEmail": {
           "type": "string",
-          "default": "serkanuncuu@gmail.com",
+          "default": "",
           "description": "Author's Email"
         }
       }
@@ -35,7 +36,7 @@
     "commands": [
       {
         "command": "auto-header-vscode.addHeaderComment",
-        "title": "Generate Header or Update"
+        "title": "Auto Header Vscode: Generate Header or Update"
       }
     ],
     "keybindings": [
@@ -52,7 +53,7 @@
     "webpack": "webpack --mode development",
     "webpack-dev": "webpack --mode development --watch",
     "package": "webpack --mode production --devtool hidden-source-map",
-    "test-compile": "tsc -p ./"
+    "compile": "tsc -p ./"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.1",
